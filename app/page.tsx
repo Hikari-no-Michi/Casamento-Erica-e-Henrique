@@ -117,9 +117,9 @@ export default function WeddingReception() {
 
         {/* Seção de Chave Pix e QR Code */}
         <div className="mt-8 p-4 border-t border-gray-300">
-          <h3 className="text-lg font-semibold text-gray-700">Contribuições</h3>
+        
           <p className="mt-2 text-gray-700">
-            Se desejar, você pode contribuir com o nosso Pix:
+          Se desejar nos presentear com um Pix, sinta-se à vontade.
           </p>
 
           <div className="flex items-center mt-4">
