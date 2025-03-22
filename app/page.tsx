@@ -8,10 +8,34 @@ export default function WeddingReception() {
   const [showPixModal, setShowPixModal] = useState(false);
   const [showConfirmModal, setShowConfirmModal] = useState(false);
 
-  const handleSubmit = (e: { preventDefault: () => void }) => {
+  const handleSubmit = async (e: { preventDefault: () => void }) => {
     e.preventDefault();
     setSubmitted(true);
     setShowConfirmModal(true); // Show confirmation modal after submission
+
+    // Enviar os dados para a API
+    try {
+      const response = await fetch('/api/confirmationAttendance', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({
+          fullName: name,
+          participants: guests,
+        }),
+      });
+
+      const data = await response.json();
+      
+      if (response.ok) {
+        console.log('Convidado criado com sucesso:', data);
+      } else {
+        console.error('Erro ao criar o convidado:', data.error);
+      }
+    } catch (error) {
+      console.error('Erro ao enviar os dados:', error);
+    }
   };
 
   const handleCopyPix = () => {
@@ -70,7 +94,7 @@ export default function WeddingReception() {
               onChange={(e) => setName(e.target.value)}
               required
             />
-            <label className="block mt-4 mb-2 text-gray-700">Convidados:</label>
+            <label className="block mt-4 mb-2 text-gray-700">Quantos convidados você levará?</label>
             <input
               type="number"
               min="0"
