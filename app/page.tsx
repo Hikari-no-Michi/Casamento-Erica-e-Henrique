@@ -94,7 +94,7 @@ export default function WeddingReception() {
               onChange={(e) => setName(e.target.value)}
               required
             />
-            <label className="block mt-4 mb-2 text-gray-700">Quantos convidados você levará?</label>
+            <label className="block mt-4 mb-2 text-gray-700">Quantos membros da sua família irão acompanhá-lo?</label>
             <input
               type="number"
               min="0"
