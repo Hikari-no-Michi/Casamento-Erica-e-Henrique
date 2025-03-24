@@ -13,8 +13,21 @@ const config: Config = {
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',
       },
+      keyframes: {
+        typing: {
+          'from': { width: '0' },
+          'to': { width: '100%' },
+        },
+      },
+      animation: {
+        typing: 'typing 3s steps(30, end) infinite',
+      },
+      fontFamily: {
+        signature: ['"Dancing Script"', 'cursive'],
+      },
     },
   },
   plugins: [],
 };
+
 export default config;
