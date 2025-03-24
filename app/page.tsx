@@ -70,7 +70,7 @@ export default function WeddingReception() {
         )}
         <div className="mt-8 border-t border-gray-300 text-center w-full">
           <h2 className="text-lg font-semibold">Presente de Casamento</h2>
-          <p className="mt-2 text-gray-700">Lista presentes abaixo, mas, se preferir, você pode nos presentear com um Pix a partir de R$ 80.</p>
+          <p className="mt-2 text-gray-700">Lista de casamento abaixo, mas, se preferir, você pode nos presentear com um Pix a partir de R$ 80.</p>
           <div className="flex flex-col items-center mt-4">
             
           <button
