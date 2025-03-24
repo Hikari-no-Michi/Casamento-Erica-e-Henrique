@@ -40,11 +40,22 @@ export default function WeddingReception() {
   return (
     <div className="min-h-screen bg-gray-100 flex items-center justify-center p-6">
       <div className="bg-white shadow-lg rounded-lg p-8 max-w-md w-full">
-        <h1 className="text-3xl font-bold text-center text-gray-800">Convite de Casamento</h1>
-        <p className="text-center text-gray-600 mt-2">Junte-se a nós para celebrar este momento especial!</p>
-        <p className={`${dancingScript.className} text-center text-[#ecc41f] mt-2 text-2xl`}>
-          Luiz Henrique e Érica Correia
-        </p>
+      <h1 className="text-3xl font-bold text-center text-gray-800">Convite de Casamento</h1>
+      <p className="text-center text-gray-600 mt-2">Junte-se a nós para celebrar este momento especial!</p>
+      <p className="text-center text-gray-600 mt-5">Com a bênção de nossos pais,</p>
+      <p className="text-center text-gray-600 mt-1">
+        Claudionor Chaves & Maria da Luz <br />
+        Flaviano Correia & Maria da Conceição
+      </p>
+      <p className={`${dancingScript.className} text-center text-[#ecc41f] mt-4 text-4xl font-bold`}>
+        Luiz Henrique  
+        <br />
+        <span className="text-2xl">&</span>  
+        <br />
+        Érica Correia
+      </p>
+
+
 
 
         <div className="flex justify-center mt-4">
